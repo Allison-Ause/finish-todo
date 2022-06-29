@@ -24,6 +24,7 @@ export default function createTodos(root, {
 
 export function TodoItem({ todo, handleComplete, handleEdit, handleDelete }) {
     const li = document.createElement('li');
+
     if (todo.complete) {
         li.classList.add('completed');
     }
