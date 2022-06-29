@@ -41,7 +41,6 @@ async function handleComplete(todo) {
     todo.complete = !todo.complete;
     // 2. Get the index of the current todo
     // 3. Update that index of the array with the result of the update service function
-
     todos[todos.indexOf(todo)] = await updateTodo(todo);
 
     display();
